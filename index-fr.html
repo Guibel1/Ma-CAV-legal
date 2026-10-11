@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#743d50">
+  <meta name="description" content="Gérez vos caves, zones, étagères et bouteilles. Retrouvez vos vins, préparez vos accords mets-vins et consultez vos statistiques avec Ma CAV pour iOS.">
+  <title>Ma CAV – Votre cave à vin, bien organisée</title>
+  <link rel="alternate" hreflang="en" href="index.html">
+  <style>
+:root{color-scheme:light;--ink:#29262a;--muted:#686169;--wine:#743d50;--line:#e5dde0;--paper:#fffdfb;--wash:#f5f2ef}
+*{box-sizing:border-box}body{margin:0;background:var(--wash);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:var(--wine);text-underline-offset:4px;overflow-wrap:anywhere}a:hover{text-decoration-thickness:2px}a:focus-visible,button:focus-visible{outline:3px solid var(--wine);outline-offset:5px;border-radius:3px}
+.wrap{max-width:1060px;margin:auto;padding:0 24px}.top{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:25px 0;border-bottom:1px solid var(--line)}.brand{font-size:1.2rem;font-weight:700;text-decoration:none;letter-spacing:.04em}.top nav{display:flex;gap:22px;flex-wrap:wrap;font-size:.9rem}.top nav a{text-decoration:none}.top nav a:hover{text-decoration:underline}
+main{margin:32px 0 40px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2.7rem,6.5vw,4.6rem);letter-spacing:-.055em;margin:0 0 22px;font-weight:650}h2{font-size:clamp(1.65rem,3.5vw,2.35rem);letter-spacing:-.035em;margin:0 0 18px}h3{font-size:1.15rem;letter-spacing:-.02em;margin:0 0 12px}p{margin:0 0 18px}.eyebrow{text-transform:uppercase;letter-spacing:.14em;color:var(--wine);font-size:.75rem;font-weight:700;margin:0 0 20px}.muted,.intro{color:var(--muted)}.intro{font-size:1.1rem;max-width:590px}.panel{background:var(--paper);border:1px solid var(--line);border-radius:16px}
+.hero{padding:62px 54px;position:relative;overflow:hidden}.hero h1{max-width:720px}.hero .intro{max-width:610px}.actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin-top:30px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 22px;border:1px solid var(--wine);border-radius:10px;background:var(--wine);color:white;font:inherit;font-weight:600;line-height:1.4;text-decoration:none}.button:hover{background:#613243}.button:disabled{background:#ebe4e5;border-color:#d7cbd0;color:#66535a;cursor:not-allowed}.note{font-size:.85rem;color:var(--muted);margin:12px 0 0}.hero .eyebrow{display:flex;align-items:center;gap:10px}.mark{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--wine)}
+.section{padding:48px 0 0}.section-head{max-width:680px;margin-bottom:24px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:28px}.card p{color:var(--muted);font-size:.97rem;margin:0}.number{display:block;color:var(--wine);font-size:.75rem;letter-spacing:.08em;margin-bottom:22px;font-weight:600}.pair{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}.pair .card{padding:32px}.cloud{margin-top:28px;padding:36px 40px;background:#eee6e8;display:grid;grid-template-columns:1fr 1.2fr;gap:32px;border:1px solid #ddd0d5;border-radius:16px}.cloud h2{font-size:1.7rem;margin:0}.cloud p{margin:0;color:#564b51}
+.support{max-width:880px}.support .hero{padding:46px 48px}.support h1{font-size:clamp(2.25rem,5vw,3.25rem)}.support .intro{max-width:660px}.email{font-size:1rem;display:block;margin-top:16px}.help{padding:36px 48px;margin-top:20px}.help h2{font-size:1.45rem;margin-bottom:16px}.help p:last-child{margin-bottom:0}.help ol,.help ul{padding-left:24px;margin:12px 0 20px}.help li{padding:4px 0}.updated{color:var(--muted);font-size:.85rem;margin:26px 0 0}.help-link{font-size:.92rem}.legal-links{display:flex;gap:24px;flex-wrap:wrap}
+footer{color:var(--muted);font-size:.85rem;padding:24px 0 30px;border-top:1px solid var(--line)}footer nav{display:flex;gap:22px;flex-wrap:wrap;margin-bottom:12px}footer p{margin:0}.skip{position:absolute;left:24px;top:-100px;background:white;padding:10px;z-index:2}.skip:focus{top:10px}
+@media(max-width:700px){.wrap{padding:0 18px}.top{gap:16px}.top nav{gap:16px}.hero{padding:38px 26px}.cards,.pair,.cloud{grid-template-columns:1fr}.section{padding-top:34px}.card,.pair .card{padding:26px}.cloud{padding:28px;gap:16px}.support .hero,.help{padding:30px 24px}main{margin-top:24px}.actions{gap:16px}.intro{font-size:1rem}}
+@media(max-width:360px){.wrap{padding:0 12px}.top nav{gap:12px}.hero{padding:32px 22px}h1{font-size:2.5rem}.support h1{font-size:2.1rem}}
+@media print{body{background:white}.top,footer,.skip,.actions,.note{display:none}.panel,.cloud{border:0;background:white;padding:16px 0}main{margin:0}.cards,.pair,.cloud{display:block}.card{break-inside:avoid}.help{break-inside:avoid}h2,h3{break-after:avoid}}
+</style>
+</head>
+<body>
+  <a class="skip" href="#content">Aller au contenu</a>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="index-fr.html">Ma CAV</a>
+      <nav aria-label="Navigation principale">
+        <a href="support-fr.html">Assistance</a>
+        <a href="index.html" lang="en" hreflang="en">English</a>
+      </nav>
+    </header>
+    <main id="content">
+      <section class="hero panel" aria-labelledby="hero-title">
+        <p class="eyebrow"><span class="mark" aria-hidden="true"></span>Ma CAV pour iOS</p>
+        <h1 id="hero-title">Votre cave.<br>Tout simplement organisée.</h1>
+        <p class="intro">Vos bouteilles, leur place, les repas qui les accompagnent. Ma CAV rassemble l’essentiel pour gérer votre cave à vin, au quotidien.</p>
+        <div class="actions">
+          <!-- Replace this disabled button with a link to the official App Store listing after publication. -->
+          <button class="button" type="button" disabled aria-describedby="availability">Bientôt sur l’App Store</button>
+          <a href="support-fr.html">Besoin d’aide ?</a>
+        </div>
+        <p class="note" id="availability">Bientôt disponible. Le téléchargement sera activé à la publication de l’app.</p>
+      </section>
+      <section class="section" aria-labelledby="collection-title">
+        <div class="section-head"><h2 id="collection-title">Une place pour chaque bouteille.</h2><p class="muted">De la cave à l’étagère, organisez votre collection à votre façon et retrouvez vos vins plus facilement.</p></div>
+        <div class="cards"><article class="card panel"><span class="number" aria-hidden="true">01</span><h3>Organisez vos caves</h3><p>Structurez vos caves en zones et en étagères pour refléter votre organisation.</p></article><article class="card panel"><span class="number" aria-hidden="true">02</span><h3>Gérez vos bouteilles</h3><p>Rassemblez vos vins et les informations de vos bouteilles dans votre collection.</p></article><article class="card panel"><span class="number" aria-hidden="true">03</span><h3>Retrouvez vos vins</h3><p>Utilisez la recherche pour retrouver les vins de votre cave.</p></article></div>
+        <div class="pair"><article class="card panel"><h2>De la cave à la table.</h2><p>Retrouvez vos repas et vos accords mets-vins pour faire le lien entre vos bouteilles et les moments où vous les dégustez.</p></article><article class="card panel"><h2>Votre collection en perspective.</h2><p>Consultez les statistiques de votre cave pour mieux connaître votre collection.</p></article></div>
+      </section>
+      <section class="cloud" aria-labelledby="icloud-title"><h2 id="icloud-title">Votre cave vous suit.<br>Avec iCloud.</h2><p>Ma CAV utilise iCloud pour synchroniser les données de votre cave entre vos appareils, avec votre compte Apple.</p></section>
+    </main>
+    <footer>
+      <nav aria-label="Assistance et informations juridiques"><a href="support-fr.html">Assistance</a><a href="privacy-fr.html">Politique de confidentialité</a><a href="terms-fr.html">Conditions d’utilisation</a></nav>
+      <p>Ma CAV · <a href="mailto:contact.gb19@gmail.com">contact.gb19@gmail.com</a></p>
+    </footer>
+  </div>
+</body>
+</html>
